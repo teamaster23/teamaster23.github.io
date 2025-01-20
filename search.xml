@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Claude_ai创号注意事项</title>
+    <url>/2024/11/19/Claude-ai%E5%88%9B%E5%8F%B7%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<p>搞了两天吧。。md这玩意是真难创</p>
+<p>实际上单纯流程来讲，其实不难，但恶心人的是claude封号很抽象，电话号码不接受大陆的（查了下好像除英美外的均不行），创好的号也很容易被封</p>
+<p>以下是部分要点：</p>
+<ol>
+<li><p>我用的虚拟号平台是<a href="https://sms-activate.guru/">这个</a>，挺常用的（23年我创建gpt的时候也是用的它），但需要注意的是不知道为啥在这个平台上+1的电话号（美国的）一直接收不到短信，需要创建+44的（英国的），相对来讲概率要大点</p>
+</li>
+<li><p>如果尝试好几次（我个人觉得大概四五次左右）仍然无法接收到短信，请暂停创建，等一阵再说，不然即使接收到验证码系统也会提示你尝试次数过多请稍后再试。</p>
+</li>
+<li><p>填写好验证码后也不要掉以轻心，请保证梯子节点优质，不然系统会封你号，我第一个号就是在创建完号之后刚输入完名字就被封了</p>
+</li>
+<li><p>邮箱我试过outlook跟gmail，都能用，大陆的邮箱我不太清楚，没敢试，个人觉得最好还是gmail</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>部分教程</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>NOIP2018游记</title>
+    <url>/2024/11/01/NOIP2018%E6%B8%B8%E8%AE%B0/</url>
+    <content><![CDATA[<hr>
+<p><a href="https://www.luogu.com.cn/article/061yu6zk">原帖地址</a></p>
+<p>发布时间： 2019-01-29 15:03</p>
+<hr>
+<h1 id="day-x"><a href="#day-x" class="headerlink" title="day -x"></a>day -x</h1><p>初赛过了</p>
+<p>然后颓废了不知道多少天</p>
+<p>ps：老师电脑除了能连外网和学生用机没啥区别</p>
+<h1 id="day-0"><a href="#day-0" class="headerlink" title="day 0"></a>day 0</h1><p>和学长们坐高铁去秦皇岛</p>
+<p>晚上知道了期中那令人崩溃的分数（虽然期末爆发了，当然，这是后话）</p>
+<p>以及。。。某王姓大力和某梁姓学姐拼酒没拼过，回宾馆后不省人事。。。</p>
+<h1 id="day-1"><a href="#day-1" class="headerlink" title="day 1"></a>day 1</h1><p>（emm。。。这是什么。。。）</p>
+<p>最后到都写上了</p>
+<p>结果。。。没有freopen</p>
+<p>一分没得（微笑.jpg）</p>
+<p>晚上偷溜出去五个人一起看海</p>
+<p>然后某比利身着棉衣倒海里（嗯）</p>
+<p>用库和比利的帽子放贝壳</p>
+<p>晚上据对门两位称查物品时找出来一条海虫</p>
+<p>我也没看见。。。</p>
+<h1 id="day-2"><a href="#day-2" class="headerlink" title="day 2"></a>day 2</h1><p>今天到都是写上freopen了</p>
+<p>but。。。这™什么guiti</p>
+<p>这是数论还是树状图啊</p>
+<p>day1下午看的dp完全没用上（手动微笑）</p>
+<p>胡乱打了一通就放弃治疗了</p>
+<p>会宾馆一看 蓝紫紫</p>
+<p>嗯</p>
+<h1 id="day-x-1"><a href="#day-x-1" class="headerlink" title="day x"></a>day x</h1><p>班长得了省二</p>
+<p>其余我们四个分加起来不比他高</p>
+<p>然后就结束了</p>
+]]></content>
+      <categories>
+        <category>记录相关</category>
+      </categories>
+      <tags>
+        <tag>个人往事</tag>
+        <tag>高中</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P2053. 作业题 - 输出下k个字符 题解</title>
+    <url>/2025/01/19/P2053-%E4%BD%9C%E4%B8%9A%E9%A2%98-%E8%BE%93%E5%87%BA%E4%B8%8Bk%E4%B8%AA%E5%AD%97%E7%AC%A6-%E9%A2%98%E8%A7%A3/</url>
+    <content><![CDATA[<p><a href="https://learn.ysrcoding.com/d/CZOI/p/2053?tid=6789cf1b65a85734d166c858">原题链接</a></p>
+<p>首先，我们通过回忆ascii表，可以发现A–Z在表中是连续且有顺序的。这也就意味着，我们可以先将开始的字符强制转换为整数型（如int），然后将这个转化后的数加上题目中的K，即可得到最终结果。</p>
+<p>比如，当大写字母为C，需要求出后面第3个字母时，我们可以将char型的C转化为int型的67，然后把67加上3，得到70，再将70转化回char型的字母F。</p>
+<p>但这里有个问题，那就是Z怎么处理，如题目所说，Z之后的字母从A开始继续循环。</p>
+<p>因此，我们需要使用取模（也就是取余）进行处理。</p>
+<p>我们可以发现，假设一个int型的变量x，如果对x取模3，那么结果一定是0、1、2三者中的其中一个。并且，当x+1时，如果一开始的结果是2则变为0，否则结果会加一。</p>
+<p>（如：3%3&#x3D;0，4%3&#x3D;1，5%3&#x3D;2，6%3&#x3D;0）</p>
+<p>因此，由上规律，以及字母一共有26个这一特点，我们可以得到正解：</p>
+<p>首先，将原字母转化为int型的数后先减去字母A所代表的int型数字，此时这个数一定是0——25之间的数字，且其在字母表中排i位就是i。</p>
+<p>其次，将i加上K，记作j</p>
+<p>然后，将j对26取模，得到0-25中的一个数，记为r</p>
+<p>再有，将r加回之前A所代表的int型数</p>
+<p>最后，将这个数转回char型，便得到了我们的最终结果。</p>
+<p>AC代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;iomanip&gt;</span><br><span class="line">using namespace ::std;</span><br><span class="line">int main()&#123;</span><br><span class="line">	char c;</span><br><span class="line">	int k;</span><br><span class="line">	cin&gt;&gt;c&gt;&gt;k;</span><br><span class="line">	int i=(int)(c)-(int)(&#x27;A&#x27;);</span><br><span class="line">	int j=i+k;</span><br><span class="line">	int r=j%26;</span><br><span class="line">	cout&lt;&lt;(char)(r+(int)(&#x27;A&#x27;));</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>算法竞赛相关</category>
+      </categories>
+      <tags>
+        <tag>基础语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/09/19/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2024/09/19/test/</url>
+    <content><![CDATA[<p>你好</p>
+<p>试试能不能上传</p>
+]]></content>
+      <tags>
+        <tag>初步</tag>
+        <tag>试试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>luogu 题解 P1159 【排行榜】</title>
+    <url>/2024/10/30/luogu-%E9%A2%98%E8%A7%A3-P1159-%E3%80%90%E6%8E%92%E8%A1%8C%E6%A6%9C%E3%80%91/</url>
+    <content><![CDATA[<p><a href="https://www.luogu.com.cn/problem/solution/P1159">题目链接</a></p>
+<hr>
+<p><a href="https://www.luogu.com.cn/article/02abfvny">原文链接</a></p>
+<p>写作时间：2018-12-05 17:57</p>
+<hr>
+<p>蒟蒻的第一篇题解，希望能过</p>
+<p>一开始看这道题的时候其实挺懵的，看不懂什么意思，后来经（kan）过（wan）思（ti）索（jie）之后，才搞清楚是什么意思，same的歌排名不变，先输出down的再输出up的就行了</p>
+<p><del>（所以我也只能永远是一个蒟蒻了）</del></p>
+<p>话不多说，上代码~~</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">now</span></span><br><span class="line">&#123;</span><br><span class="line">	string name;</span><br><span class="line">	string zhuangtai;</span><br><span class="line">&#125;s[<span class="number">101</span>];<span class="comment">//结构体，存储现在的排名以及变化情况</span></span><br><span class="line">string a[<span class="number">101</span>];<span class="comment">//存储上升了的歌</span></span><br><span class="line">string b[<span class="number">101</span>];<span class="comment">//存储下降了的歌</span></span><br><span class="line"><span class="type">int</span> r[<span class="number">101</span>]=&#123;<span class="number">0</span>&#125;;<span class="comment">//判断是否变换名次</span></span><br><span class="line">string before[<span class="number">101</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="type">int</span> x=<span class="number">0</span>,y=<span class="number">0</span>;<span class="comment">//搞个指针</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;s[i].name&gt;&gt;s[i].zhuangtai;</span><br><span class="line">		<span class="keyword">if</span>(s[i].zhuangtai==<span class="string">&quot;UP&quot;</span>)<span class="comment">//上升</span></span><br><span class="line">		&#123;</span><br><span class="line">			x++;</span><br><span class="line">			a[x]=s[i].name;<span class="comment">//存入a数组</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(s[i].zhuangtai==<span class="string">&quot;DOWN&quot;</span>)<span class="comment">//下降</span></span><br><span class="line">		&#123;</span><br><span class="line">			y++;</span><br><span class="line">			b[y]=s[i].name;<span class="comment">//存入b数组</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(s[i].zhuangtai==<span class="string">&quot;SAME&quot;</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			before[i]=s[i].name;<span class="comment">//直接存入最终输出的数组里</span></span><br><span class="line">			r[i]=<span class="number">1</span>;<span class="comment">//现在排名是i的歌名次未变</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> p=<span class="number">1</span>;<span class="comment">//又一个指针</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=y;i++)<span class="comment">//输出下降的歌</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(r[p]==<span class="number">0</span>)<span class="comment">//如果现在排名第p的歌名次变了，则存入</span></span><br><span class="line">		&#123;</span><br><span class="line">			before[p]=b[i];</span><br><span class="line">			p++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span><span class="comment">//反之直接过</span></span><br><span class="line">		&#123;</span><br><span class="line">			p++;</span><br><span class="line">			i--;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=x;i++)<span class="comment">//同上，存上升的歌</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(r[p]==<span class="number">0</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			before[p]=a[i];</span><br><span class="line">			p++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			p++;</span><br><span class="line">			i--;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cout&lt;&lt;before[i]&lt;&lt;endl;<span class="comment">//输出</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法竞赛相关</category>
+      </categories>
+      <tags>
+        <tag>模拟</tag>
+        <tag>个人洛谷de老帖搬运</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高中OI生涯</title>
+    <url>/2024/11/01/%E9%AB%98%E4%B8%ADOI%E7%94%9F%E6%B6%AF/</url>
+    <content><![CDATA[<hr>
+<p><a href="https://www.luogu.com.cn/article/2kg9avxt">原帖地址</a></p>
+<p>发布时间：2019-04-22 16:05</p>
+<hr>
+<p>大事祭</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="number">18.07</span><span class="number">.10</span> 接触OI</span><br><span class="line"><span class="number">18.11</span><span class="number">.09</span> 期中考试崩盘</span><br><span class="line"><span class="number">18.11</span><span class="number">.10</span> 第一次复赛，爆零</span><br><span class="line"><span class="number">18.11</span><span class="number">.21</span> 绿名祭</span><br><span class="line"><span class="number">18.12</span><span class="number">.05</span> 第一篇题解通过</span><br><span class="line"><span class="number">19.01</span><span class="number">.11</span> 橙名bug祭</span><br><span class="line"><span class="number">19.01</span><span class="number">.24</span> 期末顺利通过</span><br><span class="line"><span class="number">19.01</span><span class="number">.26</span> 回到蓝名</span><br><span class="line"><span class="number">19.03</span><span class="number">.22</span> 百题AC祭（P1020导弹拦截）</span><br><span class="line"><span class="number">19.04</span><span class="number">.15</span> 红名祭</span><br><span class="line"><span class="number">19.05</span><span class="number">.01</span> 提交<span class="number">500</span>祭</span><br><span class="line"><span class="number">19.05</span><span class="number">.16</span> 紫题祭（虽然抄的题解）</span><br><span class="line"><span class="number">19.06</span><span class="number">.09</span> 双百AC祭（P2835刻录光盘）</span><br><span class="line"><span class="number">19.09</span><span class="number">.06</span> emm</span><br><span class="line"><span class="number">19.09</span><span class="number">.07</span> <span class="number">1</span>K提交（大概是这个时候吧）</span><br><span class="line"><span class="number">19.09</span><span class="number">.09</span> 三百AC祭（P5322排兵布阵</span><br><span class="line"><span class="number">19.11</span><span class="number">.08</span> 肆佰AC祭（P1569 [USACO11FEB]属牛的抗议Generic Cow Prote…）</span><br><span class="line">         (翻译好长)</span><br><span class="line"><span class="number">19.11</span><span class="number">.12</span> 黑题祭</span><br><span class="line"><span class="number">19.11</span><span class="number">.17</span> AFO</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><del>这么长时间没更新我可真是屑</del></p>
+]]></content>
+      <categories>
+        <category>记录相关</category>
+      </categories>
+      <tags>
+        <tag>个人往事</tag>
+        <tag>高中</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>保研记录——一个四非CS鼠鼠的相关经历与经验教训（最终去向：BUPT）</title>
+    <url>/2024/11/01/%E4%BF%9D%E7%A0%94%E8%AE%B0%E5%BD%95%E2%80%94%E2%80%94%E4%B8%80%E4%B8%AA%E5%9B%9B%E9%9D%9E%E9%BC%A0%E9%BC%A0%E7%9A%84%E7%9B%B8%E5%85%B3%E7%BB%8F%E5%8E%86%EF%BC%88%E6%9C%80%E7%BB%88%E5%8E%BB%E5%90%91%EF%BC%9ABUPT%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="零-序"><a href="#零-序" class="headerlink" title="零 序"></a>零 序</h2><p>陌生人你好，我不知道你在看到这篇文章时是多少年，我也不知道你是否能最终上岸到自己喜欢的学校，但我希望你不要在若干年后后悔自己的决定，认为考研&#x2F;考公&#x2F;就业更适合自己</p>
+<p>这是一条已经选择了的路，走好它</p>
+<p>祝你好运，God bless</p>
+<h2 id="一-信息渠道"><a href="#一-信息渠道" class="headerlink" title="一 信息渠道"></a>一 信息渠道</h2><p>对于保研人来讲，信息渠道这块更多的是靠着学生间自发形成的团体。无论是大环境下的绿群，还是学校内部的各种推免交流团体，都是不错的选择。</p>
+<p>我个人非常反对将身边人都看作自己的对手而陷入无谓的焦虑，也不要两耳不闻窗外事啥消息都不关注，这样即使你有很强的能力也不一定会进入好的学校拿到心仪的offer。</p>
+<p>上文提到的绿群是迄今为止CS&#x2F;SE专业相关的最大的交流团体，其内部藏龙卧虎 <del>(bushi)</del> ，下辖还有一些分方向的子群，比如双非四非啥的。</p>
+<p>以下是群的相关信息：</p>
+<p><a href="https://github.com/CS-BAOYAN">绿群Github主页（maybe）</a></p>
+<p>四非计算机保研群（鼠群）：742203503</p>
+<p>计算机保研交流群（双非）：798392218</p>
+<p>另外，对于导师口碑，如果你会科学上网的话，建议使用<a href="https://www.yankong.org/">研控</a>，当然这网站的数据库<del>大概率</del>是扒的导师评价网的，绿群里也有相关的excel表整合贴，可以要一份。</p>
+<p>不过，上面的信息有些滞后，这时你可以通过小红书和知乎这俩平台查一下导师风评，一般过于出名的都能查到，这里就不点名了。</p>
+<p><del>最后，关于北邮的相关导师挑选，建议问问北邮内部已经呆过一阵子的学长学姐</del></p>
+<h2 id="二-缩写解释"><a href="#二-缩写解释" class="headerlink" title="二 缩写解释"></a>二 缩写解释</h2><p>如果你进了保研的相关群，你会发现群u之间都会用一些没咋见过的缩写。不要慌，这些东西一般都是为了方便打字才整出来的，很容易学会。以下是常见缩写表：</p>
+<p>rk：rank，排名。你能开出来啥证明用啥就行，哪个高用哪个</p>
+<p>title：指的是学校或导师认可度。对学校来说就是清北、华五、中九、末九诸如此类的划分；对导师来说就是一些帽子（院士、杰青、优青等）</p>
+<p>bg：background，指的是自己的背景信息，比如什么类型的学校，有无科研之类的。</p>
+<p>oq：over qualified，指的是大佬报远低于自己水平的学校，可能会被教务刷掉，因为教务可能会认为你肯定不会来。比如清北的同学报双非的夏令营。</p>
+<p>bar：指的是门槛，如营所需要的硬条件。比如有的学校会卡985、211。或者会卡排名。</p>
+<p>套磁：提前联系导师，一般通过导师主页留的邮件联系。</p>
+<p>强com&#x2F;弱com：com指的是committee，代表学院教务的话语权，弱com的学校可以通过套磁导师，如果导师考核通过，就可以直接入营或者发offer，代表如北邮。强com的学校则需要通过学院的筛选，导师完全说不上话，代表如南大。</p>
+<p>wl：waiting list，候补名单。如果夏令营入营了，但是面试没有通过，一般就会被作为wl，如果前面有人放弃，则有机会递补到offer</p>
+<p>ap：assistant professor，助理教授。一般都是年轻但是比较有实力的导师，有的ap是有招生资格的。</p>
+<p><del>附：感谢<a href="https://zhuanlan.zhihu.com/p/692328311">邢神</a>开源，从上面的直接摘下来小修了一下</del></p>
+<h2 id="三-个人背景"><a href="#三-个人背景" class="headerlink" title="三 个人背景"></a>三 个人背景</h2><p>学校：河北某四非</p>
+<p>专业：计算机科学与技术</p>
+<p>RK：前五学期40&#x2F;190，最终13&#x2F;190</p>
+<p>这里要解释下，我校有相关政策，在保研成绩最终计算的时候可以通过竞赛等提供额外加分，我是靠这个拿到最终名额的。</p>
+<p>竞赛：CCPC银，ICPC铜，蓝桥杯B组国一、A组国三等</p>
+<p>可能看到这里有些人觉得我竞赛这些奖听起来很nb，但说实在的，保研方面竞赛的作用太小了，除了机考外几乎没用，就XCPC这种老师们有很多都不清楚，但这也不怪老师，毕竟算法竞赛跟科研差别还是蛮大的。</p>
+<p>科研：无（悲.jpg）</p>
+<p>英语：CET-4为518，CET-6为486，我这个水平够用了</p>
+<p>方向：不挑</p>
+<p>拿到的offer（套磁的）：苏大nlp，neu，bupt</p>
+<p>可能有人会问为啥是套磁的？因为我夏令营一个没进，预推免除了苏大外也是一个没进，后文会讲。</p>
+<h2 id="四-准备材料"><a href="#四-准备材料" class="headerlink" title="四 准备材料"></a>四 准备材料</h2><p>身份证啥的不多说了</p>
+<p>除此之外必备的：简历！简历！简历！重要的事情说三遍。简历可以用<a href="https://www.wondercv.com/">超级简历</a>搞一份，效果不错。</p>
+<p>另外一定要记得，简历上项目至少三个起步，如果没搞过的话，把课设跟三级项目啥的包装下糊上就行。每个项目介绍里，一定要把该项目要解决什么问题、自己的工作、最终结果在字数不过多的情况下尽可能的写的详细。</p>
+<p>推荐信模板的话，网上有很多，以下是我个人用的，仅供参考：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">尊敬的xxx老师：</span><br><span class="line"></span><br><span class="line">您好！</span><br><span class="line"></span><br><span class="line">我是xxx，来自xx大学xx专业，渴望能够有机会推免攻读您的xxx硕士/博士。想冒昧请教，不知道您今年是否还有招生名额，我能否有机会跟您从事相关内容的学习？</span><br><span class="line"></span><br><span class="line">截至目前，我的GPA为xxx，在竞赛加权后有把握获取推免名额，且英语六级486分，四级518分，曾获校级一等奖学金等相关荣誉。</span><br><span class="line"></span><br><span class="line">我的算法功底优秀，曾获得过xxx奖项。（50-100字即可）</span><br><span class="line"></span><br><span class="line">在本科期间，我参加过多项研究和社会实践，并且取得了较好的成绩。我曾作为骨干成员，曾与我校同学合作参与到多个项目中，如xxxx等。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">通过阅读您的教师主页，我了解到您的研究主要聚焦于xxx等相关方向，结合我自身兴趣，我非常希望能够在您的指导下攻读硕士学位。</span><br><span class="line"></span><br><span class="line">附件为我的简历与相关证明以供您参考。</span><br><span class="line"></span><br><span class="line">感谢老师阅读我的个人自述。我诚挚地希望自己可以成为您的学生，希望您能对我的申请予以考虑。祝您工作顺利！</span><br><span class="line"></span><br><span class="line">学生 xxx</span><br><span class="line"></span><br><span class="line">xx年xx月xx日</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>英文的话，虽然我个人有准备但实际并没用到，故这里就不多说了，有需要的可以网上自己找找。</p>
+<p>关于排名&#x2F;绩点证明，去找自己的学校的教务处问问如何开，提前搞出一两份来。</p>
+<p>其他的想了想暂时没了，之后如果想起来的话会补上。</p>
+<h2 id="五-面试相关"><a href="#五-面试相关" class="headerlink" title="五 面试相关"></a>五 面试相关</h2><p>面试这块，大部分老师都会专注你简历上的项目问，这也就是上文提到项目至少三个起步的原因。如果你的项目跟老师兴趣&#x2F;方向对口，那么老师会专注你该项目提问。故而在准备面试的时候，请提前复习下项目内容，不要卡壳or瞎胡咧咧，否则还是有影响的。</p>
+<p>专业课的话，说实在的我没见到有认真问的，顶多就简单问问基础知识。不用太专注在这上面，稍微过一下就好。</p>
+<h2 id="六-机考相关"><a href="#六-机考相关" class="headerlink" title="六 机考相关"></a>六 机考相关</h2><p>关于机考，如果你是本科期间打过算法竞赛的，这部分可以跳过了。除了极个别学校（比如华师、北航等出名照顾acmer的，虽然我没进），不然大部分学校的机考都卡不住你。</p>
+<p>如果你没练过，我个人推荐你去刷<a href="www.luogu.com.cn">洛谷</a>、<a href="https://ac.nowcoder.com/">牛客</a>等相关网站，时间松的话一天一题两三个月就够用了，时间紧就多练练，一个月左右也差不多。</p>
+<p>ACWing的网课的话，我周围人有用的，感觉效果还可以，但我个人没听过，这里就不多推荐了，有需要的可以搜搜。</p>
+<h2 id="七-个人经历"><a href="#七-个人经历" class="headerlink" title="七 个人经历"></a>七 个人经历</h2><p><del>终于到这块了（bushi）</del></p>
+<p>关于这部分，我按照时间顺序讲述。</p>
+<p>至于为啥不像其他人一样讲讲自己夏令营预推免经历？因为我真没有，看到后面就懂了（T_T）</p>
+<h3 id="大三上的9月"><a href="#大三上的9月" class="headerlink" title="大三上的9月"></a>大三上的9月</h3><p>加入绿群开始吹水。</p>
+<p>是的我加群是很早的，但我当时深陷绩点压力没敢往其他方面发力，只关注学业成绩了。</p>
+<p>我很难评价这是否正确，只能说自己的苦得自己受着，悲.jpg</p>
+<h3 id="3月"><a href="#3月" class="headerlink" title="3月"></a>3月</h3><p>开始准备简历、邮件模板等</p>
+<h3 id="5月"><a href="#5月" class="headerlink" title="5月"></a>5月</h3><p>报名吉大CS夏令营，发陶瓷信，没人回</p>
+<h3 id="6月"><a href="#6月" class="headerlink" title="6月"></a>6月</h3><p>报名多个学校夏令营，一个offer没有</p>
+<p>零零散散发的邮件，没人回</p>
+<p>个人菜鸡，不多说</p>
+<h3 id="7月"><a href="#7月" class="headerlink" title="7月"></a>7月</h3><p>开始每天两封邮件起步发，90%以上都是默拒，仅有的几封回信也都是打哈哈。</p>
+<h3 id="8月2日"><a href="#8月2日" class="headerlink" title="8月2日"></a>8月2日</h3><p>收到第一封接受的邮件，来自neu</p>
+<p>不过老师虽然向我要了微信，但一直没加我，我当时也有点不放心，不过后来发现多虑了，<del>因为neu面试分太低根本进不了（fuck）</del></p>
+<h3 id="8月20日"><a href="#8月20日" class="headerlink" title="8月20日"></a>8月20日</h3><p>去苏大机考，后面过了</p>
+<p>有一说一苏大的地理位置确实不错，正门出去不到50m就是地铁站，后面靠近步行街商业气息浓厚，玩的东西非常多。</p>
+<p><del>就是苏州的面可能不太适合北方人口味</del></p>
+<h3 id="8月25日"><a href="#8月25日" class="headerlink" title="8月25日"></a>8月25日</h3><p>向苏大的老师发邮件，通过电话的方式聊了聊，同意给我发推荐表。</p>
+<p>这里要说下，如果想入苏大的话尽量报名其nlp方向，非常出名的。具体导师可以通过小红书搜关键词（苏大nlp）的方式查找。</p>
+<h3 id="8月30日"><a href="#8月30日" class="headerlink" title="8月30日"></a>8月30日</h3><p>西电人工智能院老师面试，答得过于惨烈，被拒</p>
+<h3 id="9月上旬"><a href="#9月上旬" class="headerlink" title="9月上旬"></a>9月上旬</h3><p>勤发邮件，每天4封起步</p>
+<p>后来我才知道我这数量已经算少的了，有认识的十几封几十封的发，<del>后来从多个offer里跳了中科院</del></p>
+<h3 id="9月13日"><a href="#9月13日" class="headerlink" title="9月13日"></a>9月13日</h3><p>去neuq参加neu的面试，拿了82.67的成绩</p>
+<p>按往年来讲这个分数够用了，但同学打探过发现这个成绩很难拿到学硕offer，专硕的话未知</p>
+<h3 id="9月中旬"><a href="#9月中旬" class="headerlink" title="9月中旬"></a>9月中旬</h3><p>继续发邮件</p>
+<h3 id="9月21日"><a href="#9月21日" class="headerlink" title="9月21日"></a>9月21日</h3><p>接到北邮老师的回信，说是先搞个机考，如果可以的话再线下面试</p>
+<h3 id="9月24日"><a href="#9月24日" class="headerlink" title="9月24日"></a>9月24日</h3><p>上午机考，过了，下午火车直接去北京</p>
+<h3 id="9月25日"><a href="#9月25日" class="headerlink" title="9月25日"></a>9月25日</h3><p>在北邮面试，晚上联系老师，告诉我过了，很高兴，后尽快联系之前的苏大的和neu的老师放出offer。</p>
+<p>这里要说下，如果手里有多个offer的话，除非全都不稳，否则尽量不要压到928再放，对老师对学生都不太好</p>
+<h3 id="9月28——9月29"><a href="#9月28——9月29" class="headerlink" title="9月28——9月29"></a>9月28——9月29</h3><p>确定录取，保研结束。</p>
+<h2 id="八-后记"><a href="#八-后记" class="headerlink" title="八 后记"></a>八 后记</h2><p>我的文字的质量并不高，很难描述出当时的准确情况。但如果你到了这个时候，你可能也会面临我当时的压力。这时，请切记：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">待到秋来九二八，大佬鸽完鼠鼠杀</span><br><span class="line">冲天鸽子破长空，鼠鼠也有offer拿</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>记录相关</category>
+      </categories>
+      <tags>
+        <tag>个人往事</tag>
+        <tag>本科</tag>
+      </tags>
+  </entry>
+</search>
