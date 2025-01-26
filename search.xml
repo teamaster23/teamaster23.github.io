@@ -42,27 +42,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Claude_ai创号注意事项</title>
-    <url>/2024/11/19/Claude-ai%E5%88%9B%E5%8F%B7%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<p>搞了两天吧。。md这玩意是真难创</p>
-<p>实际上单纯流程来讲，其实不难，但恶心人的是claude封号很抽象，电话号码不接受大陆的（查了下好像除英美外的均不行），创好的号也很容易被封</p>
-<p>以下是部分要点：</p>
-<ol>
-<li><p>我用的虚拟号平台是<a href="https://sms-activate.guru/">这个</a>，挺常用的（23年我创建gpt的时候也是用的它），但需要注意的是不知道为啥在这个平台上+1的电话号（美国的）一直接收不到短信，需要创建+44的（英国的），相对来讲概率要大点</p>
-</li>
-<li><p>如果尝试好几次（我个人觉得大概四五次左右）仍然无法接收到短信，请暂停创建，等一阵再说，不然即使接收到验证码系统也会提示你尝试次数过多请稍后再试。</p>
-</li>
-<li><p>填写好验证码后也不要掉以轻心，请保证梯子节点优质，不然系统会封你号，我第一个号就是在创建完号之后刚输入完名字就被封了</p>
-</li>
-<li><p>邮箱我试过outlook跟gmail，都能用，大陆的邮箱我不太清楚，没敢试，个人觉得最好还是gmail</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>部分教程</category>
-      </categories>
-  </entry>
-  <entry>
     <title>P2053. 作业题 - 输出下k个字符 题解</title>
     <url>/2025/01/19/P2053-%E4%BD%9C%E4%B8%9A%E9%A2%98-%E8%BE%93%E5%87%BA%E4%B8%8Bk%E4%B8%AA%E5%AD%97%E7%AC%A6-%E9%A2%98%E8%A7%A3/</url>
     <content><![CDATA[<p><a href="https://learn.ysrcoding.com/d/CZOI/p/2053?tid=6789cf1b65a85734d166c858">原题链接</a></p>
@@ -88,26 +67,25 @@
       </tags>
   </entry>
   <entry>
-    <title>luogu 题解 P1159 【排行榜】</title>
-    <url>/2024/10/30/luogu-%E9%A2%98%E8%A7%A3-P1159-%E3%80%90%E6%8E%92%E8%A1%8C%E6%A6%9C%E3%80%91/</url>
-    <content><![CDATA[<p><a href="https://www.luogu.com.cn/problem/solution/P1159">题目链接</a></p>
-<hr>
-<p><a href="https://www.luogu.com.cn/article/02abfvny">原文链接</a></p>
-<p>写作时间：2018-12-05 17:57</p>
-<hr>
-<p>蒟蒻的第一篇题解，希望能过</p>
-<p>一开始看这道题的时候其实挺懵的，看不懂什么意思，后来经（kan）过（wan）思（ti）索（jie）之后，才搞清楚是什么意思，same的歌排名不变，先输出down的再输出up的就行了</p>
-<p><del>（所以我也只能永远是一个蒟蒻了）</del></p>
-<p>话不多说，上代码~~</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">now</span></span><br><span class="line">&#123;</span><br><span class="line">	string name;</span><br><span class="line">	string zhuangtai;</span><br><span class="line">&#125;s[<span class="number">101</span>];<span class="comment">//结构体，存储现在的排名以及变化情况</span></span><br><span class="line">string a[<span class="number">101</span>];<span class="comment">//存储上升了的歌</span></span><br><span class="line">string b[<span class="number">101</span>];<span class="comment">//存储下降了的歌</span></span><br><span class="line"><span class="type">int</span> r[<span class="number">101</span>]=&#123;<span class="number">0</span>&#125;;<span class="comment">//判断是否变换名次</span></span><br><span class="line">string before[<span class="number">101</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="type">int</span> x=<span class="number">0</span>,y=<span class="number">0</span>;<span class="comment">//搞个指针</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;s[i].name&gt;&gt;s[i].zhuangtai;</span><br><span class="line">		<span class="keyword">if</span>(s[i].zhuangtai==<span class="string">&quot;UP&quot;</span>)<span class="comment">//上升</span></span><br><span class="line">		&#123;</span><br><span class="line">			x++;</span><br><span class="line">			a[x]=s[i].name;<span class="comment">//存入a数组</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(s[i].zhuangtai==<span class="string">&quot;DOWN&quot;</span>)<span class="comment">//下降</span></span><br><span class="line">		&#123;</span><br><span class="line">			y++;</span><br><span class="line">			b[y]=s[i].name;<span class="comment">//存入b数组</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(s[i].zhuangtai==<span class="string">&quot;SAME&quot;</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			before[i]=s[i].name;<span class="comment">//直接存入最终输出的数组里</span></span><br><span class="line">			r[i]=<span class="number">1</span>;<span class="comment">//现在排名是i的歌名次未变</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> p=<span class="number">1</span>;<span class="comment">//又一个指针</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=y;i++)<span class="comment">//输出下降的歌</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(r[p]==<span class="number">0</span>)<span class="comment">//如果现在排名第p的歌名次变了，则存入</span></span><br><span class="line">		&#123;</span><br><span class="line">			before[p]=b[i];</span><br><span class="line">			p++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span><span class="comment">//反之直接过</span></span><br><span class="line">		&#123;</span><br><span class="line">			p++;</span><br><span class="line">			i--;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=x;i++)<span class="comment">//同上，存上升的歌</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(r[p]==<span class="number">0</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			before[p]=a[i];</span><br><span class="line">			p++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			p++;</span><br><span class="line">			i--;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cout&lt;&lt;before[i]&lt;&lt;endl;<span class="comment">//输出</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>Claude_ai创号注意事项</title>
+    <url>/2024/11/19/Claude-ai%E5%88%9B%E5%8F%B7%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<p>搞了两天吧。。md这玩意是真难创</p>
+<p>实际上单纯流程来讲，其实不难，但恶心人的是claude封号很抽象，电话号码不接受大陆的（查了下好像除英美外的均不行），创好的号也很容易被封</p>
+<p>以下是部分要点：</p>
+<ol>
+<li><p>我用的虚拟号平台是<a href="https://sms-activate.guru/">这个</a>，挺常用的（23年我创建gpt的时候也是用的它），但需要注意的是不知道为啥在这个平台上+1的电话号（美国的）一直接收不到短信，需要创建+44的（英国的），相对来讲概率要大点</p>
+</li>
+<li><p>如果尝试好几次（我个人觉得大概四五次左右）仍然无法接收到短信，请暂停创建，等一阵再说，不然即使接收到验证码系统也会提示你尝试次数过多请稍后再试。</p>
+</li>
+<li><p>填写好验证码后也不要掉以轻心，请保证梯子节点优质，不然系统会封你号，我第一个号就是在创建完号之后刚输入完名字就被封了</p>
+</li>
+<li><p>邮箱我试过outlook跟gmail，都能用，大陆的邮箱我不太清楚，没敢试，个人觉得最好还是gmail</p>
+</li>
+</ol>
 ]]></content>
       <categories>
-        <category>算法竞赛相关</category>
+        <category>部分教程</category>
       </categories>
-      <tags>
-        <tag>模拟</tag>
-        <tag>个人洛谷de老帖搬运</tag>
-      </tags>
   </entry>
   <entry>
     <title>test</title>
@@ -137,6 +115,28 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>luogu 题解 P1159 【排行榜】</title>
+    <url>/2024/10/30/luogu-%E9%A2%98%E8%A7%A3-P1159-%E3%80%90%E6%8E%92%E8%A1%8C%E6%A6%9C%E3%80%91/</url>
+    <content><![CDATA[<p><a href="https://www.luogu.com.cn/problem/solution/P1159">题目链接</a></p>
+<hr>
+<p><a href="https://www.luogu.com.cn/article/02abfvny">原文链接</a></p>
+<p>写作时间：2018-12-05 17:57</p>
+<hr>
+<p>蒟蒻的第一篇题解，希望能过</p>
+<p>一开始看这道题的时候其实挺懵的，看不懂什么意思，后来经（kan）过（wan）思（ti）索（jie）之后，才搞清楚是什么意思，same的歌排名不变，先输出down的再输出up的就行了</p>
+<p><del>（所以我也只能永远是一个蒟蒻了）</del></p>
+<p>话不多说，上代码~~</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">now</span></span><br><span class="line">&#123;</span><br><span class="line">	string name;</span><br><span class="line">	string zhuangtai;</span><br><span class="line">&#125;s[<span class="number">101</span>];<span class="comment">//结构体，存储现在的排名以及变化情况</span></span><br><span class="line">string a[<span class="number">101</span>];<span class="comment">//存储上升了的歌</span></span><br><span class="line">string b[<span class="number">101</span>];<span class="comment">//存储下降了的歌</span></span><br><span class="line"><span class="type">int</span> r[<span class="number">101</span>]=&#123;<span class="number">0</span>&#125;;<span class="comment">//判断是否变换名次</span></span><br><span class="line">string before[<span class="number">101</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="type">int</span> x=<span class="number">0</span>,y=<span class="number">0</span>;<span class="comment">//搞个指针</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;s[i].name&gt;&gt;s[i].zhuangtai;</span><br><span class="line">		<span class="keyword">if</span>(s[i].zhuangtai==<span class="string">&quot;UP&quot;</span>)<span class="comment">//上升</span></span><br><span class="line">		&#123;</span><br><span class="line">			x++;</span><br><span class="line">			a[x]=s[i].name;<span class="comment">//存入a数组</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(s[i].zhuangtai==<span class="string">&quot;DOWN&quot;</span>)<span class="comment">//下降</span></span><br><span class="line">		&#123;</span><br><span class="line">			y++;</span><br><span class="line">			b[y]=s[i].name;<span class="comment">//存入b数组</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(s[i].zhuangtai==<span class="string">&quot;SAME&quot;</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			before[i]=s[i].name;<span class="comment">//直接存入最终输出的数组里</span></span><br><span class="line">			r[i]=<span class="number">1</span>;<span class="comment">//现在排名是i的歌名次未变</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> p=<span class="number">1</span>;<span class="comment">//又一个指针</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=y;i++)<span class="comment">//输出下降的歌</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(r[p]==<span class="number">0</span>)<span class="comment">//如果现在排名第p的歌名次变了，则存入</span></span><br><span class="line">		&#123;</span><br><span class="line">			before[p]=b[i];</span><br><span class="line">			p++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span><span class="comment">//反之直接过</span></span><br><span class="line">		&#123;</span><br><span class="line">			p++;</span><br><span class="line">			i--;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=x;i++)<span class="comment">//同上，存上升的歌</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(r[p]==<span class="number">0</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			before[p]=a[i];</span><br><span class="line">			p++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			p++;</span><br><span class="line">			i--;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cout&lt;&lt;before[i]&lt;&lt;endl;<span class="comment">//输出</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法竞赛相关</category>
+      </categories>
+      <tags>
+        <tag>模拟</tag>
+        <tag>个人洛谷de老帖搬运</tag>
+      </tags>
   </entry>
   <entry>
     <title>保研记录——一个四非CS鼠鼠的相关经历与经验教训（最终去向：BUPT）</title>
@@ -231,12 +231,6 @@
       </tags>
   </entry>
   <entry>
-    <title>试一试能不能交</title>
-    <url>/2025/01/26/%E8%AF%95%E4%B8%80%E8%AF%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BA%A4/</url>
-    <content><![CDATA[<p>更新电脑了，看看能不能正常提交</p>
-]]></content>
-  </entry>
-  <entry>
     <title>高中OI生涯</title>
     <url>/2024/11/01/%E9%AB%98%E4%B8%ADOI%E7%94%9F%E6%B6%AF/</url>
     <content><![CDATA[<hr>
@@ -254,5 +248,11 @@
         <tag>个人往事</tag>
         <tag>高中</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>试一试能不能交</title>
+    <url>/2025/01/26/%E8%AF%95%E4%B8%80%E8%AF%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BA%A4/</url>
+    <content><![CDATA[<p>更新电脑了，看看能不能正常提交</p>
+]]></content>
   </entry>
 </search>

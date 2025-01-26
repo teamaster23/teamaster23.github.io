@@ -10,6 +10,8 @@
     <meta name="author" content="teamaster23">
     
     
+        <link rel="icon" href="http://example.com/assets/images/favicon.ico">
+    
     
     <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"teamaster23","sameAs":["https://github.com/teamaster23/"],"image":"head_from_cogecha.jpg"},"articleBody":"题目链接\n\n原文链接\n写作时间：2018-12-05 17:57\n\n蒟蒻的第一篇题解，希望能过\n一开始看这道题的时候其实挺懵的，看不懂什么意思，后来经（kan）过（wan）思（ti）索（jie）之后，才搞清楚是什么意思，same的歌排名不变，先输出down的再输出up的就行了\n（所以我也只能永远是一个蒟蒻了）\n话不多说，上代码~~\n1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768#include&lt;bits/stdc++.h&gt;using namespace std;struct now&#123;\tstring name;\tstring zhuangtai;&#125;s[101];//结构体，存储现在的排名以及变化情况string a[101];//存储上升了的歌string b[101];//存储下降了的歌int r[101]=&#123;0&#125;;//判断是否变换名次string before[101];int main()&#123;\tint n;\tcin&gt;&gt;n;\tint x=0,y=0;//搞个指针\tfor(int i=1;i&lt;=n;i++)\t&#123;\t\tcin&gt;&gt;s[i].name&gt;&gt;s[i].zhuangtai;\t\tif(s[i].zhuangtai==&quot;UP&quot;)//上升\t\t&#123;\t\t\tx++;\t\t\ta[x]=s[i].name;//存入a数组\t\t&#125;\t\telse if(s[i].zhuangtai==&quot;DOWN&quot;)//下降\t\t&#123;\t\t\ty++;\t\t\tb[y]=s[i].name;//存入b数组\t\t&#125;\t\telse if(s[i].zhuangtai==&quot;SAME&quot;)\t\t&#123;\t\t\tbefore[i]=s[i].name;//直接存入最终输出的数组里\t\t\tr[i]=1;//现在排名是i的歌名次未变\t\t&#125;\t&#125;\tint p=1;//又一个指针\tfor(int i=1;i&lt;=y;i++)//输出下降的歌\t&#123;\t\tif(r[p]==0)//如果现在排名第p的歌名次变了，则存入\t\t&#123;\t\t\tbefore[p]=b[i];\t\t\tp++;\t\t&#125;\t\telse//反之直接过\t\t&#123;\t\t\tp++;\t\t\ti--;\t\t&#125;\t&#125;\tfor(int i=1;i&lt;=x;i++)//同上，存上升的歌\t&#123;\t\tif(r[p]==0)\t\t&#123;\t\t\tbefore[p]=a[i];\t\t\tp++;\t\t&#125;\t\telse\t\t&#123;\t\t\tp++;\t\t\ti--;\t\t&#125;\t&#125;\tfor(int i=1;i&lt;=n;i++)\t&#123;\t\tcout&lt;&lt;before[i]&lt;&lt;endl;//输出\t&#125;\treturn 0;&#125;\n","dateCreated":"2024-10-30T18:12:38+08:00","dateModified":"2024-10-30T18:17:54+08:00","datePublished":"2024-10-30T18:12:38+08:00","description":"","headline":"luogu 题解 P1159 【排行榜】","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/10/30/luogu-%E9%A2%98%E8%A7%A3-P1159-%E3%80%90%E6%8E%92%E8%A1%8C%E6%A6%9C%E3%80%91/"},"publisher":{"@type":"Organization","name":"teamaster23","sameAs":["https://github.com/teamaster23/"],"image":"head_from_cogecha.jpg","logo":{"@type":"ImageObject","url":"head_from_cogecha.jpg"}},"url":"http://example.com/2024/10/30/luogu-%E9%A2%98%E8%A7%A3-P1159-%E3%80%90%E6%8E%92%E8%A1%8C%E6%A6%9C%E3%80%91/","keywords":"模拟, 个人洛谷de老帖搬运"}</script>
     <meta name="description" content="题目链接  原文链接 写作时间：2018-12-05 17:57  蒟蒻的第一篇题解，希望能过 一开始看这道题的时候其实挺懵的，看不懂什么意思，后来经（kan）过（wan）思（ti）索（jie）之后，才搞清楚是什么意思，same的歌排名不变，先输出down的再输出up的就行了 （所以我也只能永远是一个蒟蒻了） 话不多说，上代码~~ 123456789101112131415161718192021">
@@ -295,7 +297,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Diesen Beitrag teilen"
+                aria-label="Share this post"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
@@ -345,7 +347,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
             
                 <i class="fa fa-list" aria-hidden="true"></i>
             </a>
@@ -410,7 +412,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Diesen Beitrag teilen"
+                aria-label="Share this post"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
@@ -460,7 +462,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
             
                 <i class="fa fa-list" aria-hidden="true"></i>
             </a>
