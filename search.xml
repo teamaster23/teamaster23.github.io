@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>NOIP2018游记</title>
+    <url>/2024/11/01/NOIP2018%E6%B8%B8%E8%AE%B0/</url>
+    <content><![CDATA[<hr>
+<p><a href="https://www.luogu.com.cn/article/061yu6zk">原帖地址</a></p>
+<p>发布时间： 2019-01-29 15:03</p>
+<hr>
+<h1 id="day-x"><a href="#day-x" class="headerlink" title="day -x"></a>day -x</h1><p>初赛过了</p>
+<p>然后颓废了不知道多少天</p>
+<p>ps：老师电脑除了能连外网和学生用机没啥区别</p>
+<h1 id="day-0"><a href="#day-0" class="headerlink" title="day 0"></a>day 0</h1><p>和学长们坐高铁去秦皇岛</p>
+<p>晚上知道了期中那令人崩溃的分数（虽然期末爆发了，当然，这是后话）</p>
+<p>以及。。。某王姓大力和某梁姓学姐拼酒没拼过，回宾馆后不省人事。。。</p>
+<h1 id="day-1"><a href="#day-1" class="headerlink" title="day 1"></a>day 1</h1><p>（emm。。。这是什么。。。）</p>
+<p>最后到都写上了</p>
+<p>结果。。。没有freopen</p>
+<p>一分没得（微笑.jpg）</p>
+<p>晚上偷溜出去五个人一起看海</p>
+<p>然后某比利身着棉衣倒海里（嗯）</p>
+<p>用库和比利的帽子放贝壳</p>
+<p>晚上据对门两位称查物品时找出来一条海虫</p>
+<p>我也没看见。。。</p>
+<h1 id="day-2"><a href="#day-2" class="headerlink" title="day 2"></a>day 2</h1><p>今天到都是写上freopen了</p>
+<p>but。。。这™什么guiti</p>
+<p>这是数论还是树状图啊</p>
+<p>day1下午看的dp完全没用上（手动微笑）</p>
+<p>胡乱打了一通就放弃治疗了</p>
+<p>会宾馆一看 蓝紫紫</p>
+<p>嗯</p>
+<h1 id="day-x-1"><a href="#day-x-1" class="headerlink" title="day x"></a>day x</h1><p>班长得了省二</p>
+<p>其余我们四个分加起来不比他高</p>
+<p>然后就结束了</p>
+]]></content>
+      <categories>
+        <category>记录相关</category>
+      </categories>
+      <tags>
+        <tag>个人往事</tag>
+        <tag>高中</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Claude_ai创号注意事项</title>
     <url>/2024/11/19/Claude-ai%E5%88%9B%E5%8F%B7%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<p>搞了两天吧。。md这玩意是真难创</p>
@@ -47,76 +88,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/09/19/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>NOIP2018游记</title>
-    <url>/2024/11/01/NOIP2018%E6%B8%B8%E8%AE%B0/</url>
-    <content><![CDATA[<hr>
-<p><a href="https://www.luogu.com.cn/article/061yu6zk">原帖地址</a></p>
-<p>发布时间： 2019-01-29 15:03</p>
-<hr>
-<h1 id="day-x"><a href="#day-x" class="headerlink" title="day -x"></a>day -x</h1><p>初赛过了</p>
-<p>然后颓废了不知道多少天</p>
-<p>ps：老师电脑除了能连外网和学生用机没啥区别</p>
-<h1 id="day-0"><a href="#day-0" class="headerlink" title="day 0"></a>day 0</h1><p>和学长们坐高铁去秦皇岛</p>
-<p>晚上知道了期中那令人崩溃的分数（虽然期末爆发了，当然，这是后话）</p>
-<p>以及。。。某王姓大力和某梁姓学姐拼酒没拼过，回宾馆后不省人事。。。</p>
-<h1 id="day-1"><a href="#day-1" class="headerlink" title="day 1"></a>day 1</h1><p>（emm。。。这是什么。。。）</p>
-<p>最后到都写上了</p>
-<p>结果。。。没有freopen</p>
-<p>一分没得（微笑.jpg）</p>
-<p>晚上偷溜出去五个人一起看海</p>
-<p>然后某比利身着棉衣倒海里（嗯）</p>
-<p>用库和比利的帽子放贝壳</p>
-<p>晚上据对门两位称查物品时找出来一条海虫</p>
-<p>我也没看见。。。</p>
-<h1 id="day-2"><a href="#day-2" class="headerlink" title="day 2"></a>day 2</h1><p>今天到都是写上freopen了</p>
-<p>but。。。这™什么guiti</p>
-<p>这是数论还是树状图啊</p>
-<p>day1下午看的dp完全没用上（手动微笑）</p>
-<p>胡乱打了一通就放弃治疗了</p>
-<p>会宾馆一看 蓝紫紫</p>
-<p>嗯</p>
-<h1 id="day-x-1"><a href="#day-x-1" class="headerlink" title="day x"></a>day x</h1><p>班长得了省二</p>
-<p>其余我们四个分加起来不比他高</p>
-<p>然后就结束了</p>
-]]></content>
-      <categories>
-        <category>记录相关</category>
-      </categories>
-      <tags>
-        <tag>个人往事</tag>
-        <tag>高中</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2024/09/19/test/</url>
-    <content><![CDATA[<p>你好</p>
-<p>试试能不能上传</p>
-]]></content>
-      <tags>
-        <tag>初步</tag>
-        <tag>试试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>luogu 题解 P1159 【排行榜】</title>
     <url>/2024/10/30/luogu-%E9%A2%98%E8%A7%A3-P1159-%E3%80%90%E6%8E%92%E8%A1%8C%E6%A6%9C%E3%80%91/</url>
     <content><![CDATA[<p><a href="https://www.luogu.com.cn/problem/solution/P1159">题目链接</a></p>
@@ -137,6 +108,35 @@
         <tag>模拟</tag>
         <tag>个人洛谷de老帖搬运</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2024/09/19/test/</url>
+    <content><![CDATA[<p>你好</p>
+<p>试试能不能上传</p>
+]]></content>
+      <tags>
+        <tag>初步</tag>
+        <tag>试试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/09/19/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>保研记录——一个四非CS鼠鼠的相关经历与经验教训（最终去向：BUPT）</title>
@@ -229,6 +229,12 @@
         <tag>个人往事</tag>
         <tag>本科</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>试一试能不能交</title>
+    <url>/2025/01/26/%E8%AF%95%E4%B8%80%E8%AF%95%E8%83%BD%E4%B8%8D%E8%83%BD%E4%BA%A4/</url>
+    <content><![CDATA[<p>更新电脑了，看看能不能正常提交</p>
+]]></content>
   </entry>
   <entry>
     <title>高中OI生涯</title>
